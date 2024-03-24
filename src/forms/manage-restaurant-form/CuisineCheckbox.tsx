@@ -14,7 +14,7 @@ const CuisineCheckbox = ({ cuisine, field }: Props) => {
         <Checkbox
           className="bg-white"
           checked={field.value.includes(cuisine)}
-          onCheckedChange={(checked: Boolean) => {
+          onCheckedChange={(checked) => {
             if (checked) {
               field.onChange([...field.value, cuisine]);
             } else {
